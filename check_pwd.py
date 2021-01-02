@@ -23,6 +23,9 @@ def check_pwd(pwd):
     if not has_upper_case(pwd):
         return False
 
+    if not has_digit(pwd):
+        return False
+
     return True
 
 
@@ -42,3 +45,10 @@ def has_upper_case(pwd):
             return True
 
     return False
+
+
+def has_digit(pwd):
+
+    for d in pwd:
+        if d.isdigit():
+            return True
