@@ -10,5 +10,9 @@ class TestCase(unittest.TestCase):
         pwd = "jacobGaeta25@"
         self.assertTrue(check_pwd(pwd))
 
+    def test_short_pwd(self):
+        pwd = "mooV2#"
+        self.assertFalse(check_pwd(pwd))
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)
