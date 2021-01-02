@@ -17,4 +17,16 @@ def check_pwd(pwd):
     if len(pwd) > 20:
         return False
 
+    if not has_lower_case(pwd):
+        return False
+
     return True
+
+
+def has_lower_case(pwd):
+
+    for p in pwd:
+        if p.islower():
+            return True
+
+    return False
