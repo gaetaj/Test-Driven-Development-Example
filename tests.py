@@ -14,5 +14,9 @@ class TestCase(unittest.TestCase):
         pwd = "mooV2#"
         self.assertFalse(check_pwd(pwd))
 
+    def test_long_pwd(self):
+        pwd = "mooooooooooooooooooE1!"
+        self.assertFalse(check_pwd(pwd))
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)
