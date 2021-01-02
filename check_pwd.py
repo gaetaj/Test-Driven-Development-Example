@@ -26,6 +26,9 @@ def check_pwd(pwd):
     if not has_digit(pwd):
         return False
 
+    if not has_symbol(pwd):
+        return False
+
     return True
 
 
@@ -52,3 +55,13 @@ def has_digit(pwd):
     for d in pwd:
         if d.isdigit():
             return True
+
+
+def has_symbol(pwd):
+
+    valid_symbol = "~`!@#$%^&*()_+-="
+    for s in pwd:
+        if s in valid_symbol:
+            return True
+
+    return False
