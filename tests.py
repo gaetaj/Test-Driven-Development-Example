@@ -22,5 +22,9 @@ class TestCase(unittest.TestCase):
         pwd = "MOOLY33#"
         self.assertFalse(check_pwd(pwd))
 
+    def test_has_upper(self):
+        pwd = "mooly33#"
+        self.assertFalse(check_pwd(pwd))
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)
