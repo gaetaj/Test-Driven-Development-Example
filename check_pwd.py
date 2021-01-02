@@ -38,7 +38,6 @@ def has_lower_case(pwd):
         if p.islower():
             return True
 
-    return False
 
 
 def has_upper_case(pwd):
@@ -47,7 +46,6 @@ def has_upper_case(pwd):
         if p.isupper():
             return True
 
-    return False
 
 
 def has_digit(pwd):
@@ -64,4 +62,3 @@ def has_symbol(pwd):
         if s in valid_symbol:
             return True
 
-    return False
