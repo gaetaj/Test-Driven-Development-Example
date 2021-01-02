@@ -18,5 +18,9 @@ class TestCase(unittest.TestCase):
         pwd = "mooooooooooooooooooE1!"
         self.assertFalse(check_pwd(pwd))
 
+    def test_has_lower(self):
+        pwd = "MOOLY33#"
+        self.assertFalse(check_pwd(pwd))
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)
