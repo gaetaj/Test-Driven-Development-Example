@@ -30,5 +30,9 @@ class TestCase(unittest.TestCase):
         pwd = "jacobGaeta@@"
         self.assertFalse(check_pwd(pwd))
 
+    def test_has_symbol(self):
+        pwd = "jacobGaeta12"
+        self.assertFalse(check_pwd(pwd))
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)
