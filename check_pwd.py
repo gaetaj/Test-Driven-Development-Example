@@ -20,6 +20,9 @@ def check_pwd(pwd):
     if not has_lower_case(pwd):
         return False
 
+    if not has_upper_case(pwd):
+        return False
+
     return True
 
 
@@ -27,6 +30,15 @@ def has_lower_case(pwd):
 
     for p in pwd:
         if p.islower():
+            return True
+
+    return False
+
+
+def has_upper_case(pwd):
+
+    for p in pwd:
+        if p.isupper():
             return True
 
     return False
