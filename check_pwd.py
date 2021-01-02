@@ -39,13 +39,11 @@ def has_lower_case(pwd):
             return True
 
 
-
 def has_upper_case(pwd):
 
     for p in pwd:
         if p.isupper():
             return True
-
 
 
 def has_digit(pwd):
