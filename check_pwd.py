@@ -61,4 +61,3 @@ def has_symbol(pwd):
     for s in pwd:
         if s in valid_symbol:
             return True
-
